@@ -1,0 +1,6 @@
+dist/
+node_modules/
+scripts/
+babel.config.js
+ormconfig.js
+ormconfig.example.js
