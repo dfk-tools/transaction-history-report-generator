@@ -1,0 +1,69 @@
+{
+    "compilerOptions": {
+        /* Projects */
+        // "incremental": true, /* Enable incremental compilation */
+        // "composite": true, /* Enable constraints that allow a TypeScript project to be used with project references. */
+        // "tsBuildInfoFile": "./", /* Specify the folder for .tsbuildinfo incremental compilation files. */
+
+        /* Language and Environment */
+        "target": "ESNEXT", /* Specify ECMAScript target version: "ES3" (default), "ES5", "ES2015", "ES2016", "ES2017", "ES2018", "ESNEXT". */
+        // "lib": [], /* Specify library files to be included in the compilation. */
+        "experimentalDecorators": true, /* Enables experimental support for ES7 decorators. */
+        "emitDecoratorMetadata": true, /* Enables experimental support for emitting type metadata for decorators. */
+
+        /* Modules */
+        "module": "commonjs", /* Specify module code generation: "none", "commonjs", "amd", "system", "umd", "es2015", "es2020", "esnext". */
+        "rootDir": "./src", /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
+        "moduleResolution": "node", /* Specify module resolution strategy: "node", "classic". */
+        "baseUrl": "./", /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
+        "paths": {
+            "*": ["./*"]
+        }, /* Specify how to resolve module names as well as any paths to .js files. */
+        "resolveJsonModule": true, /* Allow reading TypeScript modules with .json file extension. */
+
+        /* JavaScript Support */
+        // "allowJs": true, /* Allow javascript files to be compiled. */
+        // "checkJs": true, /* Report errors in .js files. */
+
+        /* Emit */
+        "declaration": true, /* Generates corresponding `.d.ts` file. */
+        "declarationMap": true, /* Generate a sourcemap for each corresponding `.d.ts` file. */
+        "sourceMap": true, /* Generate a sourcemap for each corresponding `.js` file. */
+        "outDir": "./dist", /* Specify the output directory. */
+        "removeComments": false, /* Do not emit comments to output. */
+
+        /* Interop Constraints */
+        "allowSyntheticDefaultImports": true, /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */
+        "esModuleInterop": true, /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables `allowSyntheticDefaultImports` for type compatibility. */
+        "forceConsistentCasingInFileNames": true, /* Ensure that casing is correct in imports. */
+
+        /* Type Checking */
+        "strict": true, /* Enable all strict type checking options. */
+        "noImplicitAny": true, /* Raise error on expressions and declarations with an implied 'any' type. */
+        "strictNullChecks": true, /* Enable strict null checks. */
+        // "strictFunctionTypes": true, /* Enable strict checking of function types. */
+        // "strictBindCallApply": true, /* Enable strict 'bind', 'call', and 'apply' methods on functions. */
+        "strictPropertyInitialization": false, /* Enable strict checking of property initialization in classes. */
+        "noImplicitThis": true, /* Raise error on 'this' expressions with an implied 'any' type. */
+        "useUnknownInCatchVariables": true, /* Raise error on 'catch' clause variables with an implied 'any' type. */
+        "alwaysStrict": true, /* Parse in strict mode and emit "use strict" for each source file. */
+        // "noUnusedLocals": true, /* Report errors on unused locals. */
+        // "noUnusedParameters": true, /* Report errors on unused parameters. */
+        // "exactOptionalPropertyTypes": true, /* Enable strict checking of object literal property types. */
+        "noImplicitReturns": true, /* Raise error on expressions and declarations with an implied 'any' return type. */
+        "noFallthroughCasesInSwitch": true, /* Raise error on fallthrough cases in switch statement. */
+        // "noUncheckedIndexedAccess": true, /* Raise error on indexing expressions that could possibly be mixed to enable checking of index access. */
+        // "noImplicitOverride": true, /* Raise error on 'override' keywords. */
+        // "noPropertyAccessFromIndexSignature": true, /* Disallow calling accessors in indexed properties. */
+
+        /* Completeness */
+        "skipLibCheck": true /* Skip type checking all .d.ts files. */
+    },
+    "include": [
+        "./src/**/*.ts"
+    ], /* Specify files to include in compilation. */
+    "exclude": [
+        "./node_modules",
+        "./src/**/*.test.ts"
+    ] /* Specify files to exclude from compilation. */
+}

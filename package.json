@@ -1,0 +1,56 @@
+{
+    "name": "@dfk-tools/transaction-history-report-generator",
+    "version": "0.0.0",
+    "description": "",
+    "license": "MIT",
+    "keywords": [
+        "defikingdoms"
+    ],
+    "homepage": "https://github.com/dfk-tools/transaction-history-report-generator#readme",
+    "bugs": {
+        "url": "https://github.com/dfk-tools/transaction-history-report-generator/issues"
+    },
+    "author": "Matthew Downs <matthew.downsc@gmail.com>",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dfk-tools/transaction-history-report-generator.git"
+    },
+    "main": "./dist/index.js",
+    "scripts": {
+        "prebuild": "rimraf ./dist",
+        "build": "tsc -p .",
+        "postbuild": "node ./scripts/postbuild.js",
+        "lint": "eslint .",
+        "test": "jest"
+    },
+    "dependencies": {
+        "moment": "^2.29.1",
+        "uuid": "^8.3.2",
+        "xlsx": "^0.17.4"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.15.8",
+        "@babel/preset-env": "^7.16.4",
+        "@babel/preset-typescript": "^7.15.0",
+        "@types/jest": "^27.0.3",
+        "@types/node": "^16.11.11",
+        "@types/rimraf": "^3.0.2",
+        "@types/uuid": "^8.3.3",
+        "@typescript-eslint/eslint-plugin": "^5.5.0",
+        "@typescript-eslint/parser": "^5.5.0",
+        "babel-jest": "^27.3.1",
+        "concurrently": "^6.4.0",
+        "eslint": "^8.3.0",
+        "jest": "^27.4.3",
+        "nodemon": "^2.0.15",
+        "prompts": "^2.4.2",
+        "rimraf": "^3.0.2",
+        "ts-jest": "^27.0.7",
+        "ts-node": "^10.4.0",
+        "typescript": "^4.5.2"
+    },
+    "engines": {
+        "node": ">=14 <=16"
+    },
+    "private": true
+}
