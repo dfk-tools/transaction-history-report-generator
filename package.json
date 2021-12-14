@@ -37,7 +37,7 @@
         "@babel/preset-env": "^7.16.4",
         "@babel/preset-typescript": "^7.15.0",
         "@types/jest": "^27.0.3",
-        "@types/node": "^16.11.11",
+        "@types/node": "^16.11.13",
         "@types/prompts": "^2.0.14",
         "@types/rimraf": "^3.0.2",
         "@types/uuid": "^8.3.3",
