@@ -1,9 +1,11 @@
 {
     "name": "@dfk-tools/transaction-history-report-generator",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "description": "",
     "license": "MIT",
     "keywords": [
+        "harmony",
+        "harmony-one",
         "defikingdoms"
     ],
     "homepage": "https://github.com/dfk-tools/transaction-history-report-generator#readme",
