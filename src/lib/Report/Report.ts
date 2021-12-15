@@ -6,6 +6,9 @@ import {
 import { ReportOptions } from './Report.types';
 import { Transaction } from '../../types';
 
+/**
+ * ExcelJS instance of provided {@link Transaction transaction} data that can be exported in various formats.
+ */
 class Report {
     constructor(transactions: Transaction[], options?: ReportOptions) {
         const workbook = new Workbook();
