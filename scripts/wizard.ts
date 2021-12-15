@@ -11,7 +11,18 @@ async function wizard() {
     console.log('Welcome to the Defi Kingdoms transaction history report generator wizard!');
     console.log('This tool will allow you to generate reports via the command line.');
 
-    const generators: Record<string, Generator> = {};
+    const generators: Record<string, Generator> = {
+        'Harmony Mainnet': new Generator({
+            rpc: 'https://api.harmony.one',
+            chainId: ChainID.HmyMainnet,
+            chainType: ChainType.Harmony
+        }),
+        'Harmony Testnet': new Generator({
+            rpc: 'https://api.s0.b.hmny.io',
+            chainId: ChainID.HmyTestnet,
+            chainType: ChainType.Harmony
+        })
+    };
 
     async function mainMenu() {
         const { menuSelection } = await prompts({
@@ -142,6 +153,16 @@ async function wizard() {
             type: 'text'
         }) as { title: string; };
 
+        const { exportAs } = await prompts({
+            choices: [
+                { title: 'csv', value: 'csv' },
+                { title: 'xlsx', value: 'xlsx' }
+            ],
+            message: 'Export as',
+            name: 'exportAs',
+            type: 'select'
+        }) as { exportAs: 'csv' | 'xlsx'; };
+
         console.log('Generating report...');
 
         const report = await generator.report(player, {
@@ -151,10 +172,10 @@ async function wizard() {
 
         console.log('Report generated.');
 
-        const fileName = title.endsWith('.xlsx') ? title : `${title}.xlsx`;
+        const fileName = `${title}.${exportAs}`;
 
         const reportFilePath = join(reportsPath, fileName);
-        await report.exportAsXlsx(reportFilePath);
+        await (exportAs === 'csv' ? report.exportAsCsv(reportFilePath) : report.exportAsXlsx(reportFilePath))
 
         console.log(`Report file saved to ${reportFilePath}`);
     }

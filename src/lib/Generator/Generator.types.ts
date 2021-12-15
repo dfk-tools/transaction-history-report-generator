@@ -21,7 +21,12 @@ export type GeneratorReportFilters = {
     limit?: number;
 
     /**
-     * Set to true to exclude transactions that are not yet completed. Default is `false`.
+     * Start date
      */
-    includeIncomplete?: boolean;
+    start?: Date;
+
+    /**
+     * End date
+     */
+    end?: Date;
 };
