@@ -10,6 +10,11 @@ storage/data
 ormconfig.js
 ormconfig.json
 
+### Visual Studio Code ###
+
+# vscode folder
+.vscode
+
 ### Linux ###
 *~
 
