@@ -18,6 +18,9 @@ const defaultOptions: GeneratorOptions = {
     chainType: ChainType.Harmony
 };
 
+/**
+ * EVM chain instance for collecting transaction histories and generating {@link Report reports}.
+ */
 class Generator {
     constructor(options?: Partial<GeneratorOptions>) {
         const _options: GeneratorOptions = {
