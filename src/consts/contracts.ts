@@ -16,7 +16,7 @@ const contracts = {
     DFKGold: '0x3a4edcf3312f44ef027acfd8c21382a5259936e7',
 
     // questing
-    QuestCoreV2 = '0x5100bd31b822371108a0f63dcfb6594b9919eaf4',
+    QuestCoreV2: '0x5100bd31b822371108a0f63dcfb6594b9919eaf4',
 
     // plants
     Ambertaffy: '0x6e1bC01Cc52D165B357c42042cF608159A2B81c1',
