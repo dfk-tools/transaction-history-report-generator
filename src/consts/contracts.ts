@@ -15,6 +15,9 @@ const contracts = {
     GaiasTears: '0x24eA0D436d3c2602fbfEfBe6a16bBc304C963D04',
     DFKGold: '0x3a4edcf3312f44ef027acfd8c21382a5259936e7',
 
+    // questing
+    QuestCoreV2 = '0x5100bd31b822371108a0f63dcfb6594b9919eaf4',
+
     // plants
     Ambertaffy: '0x6e1bC01Cc52D165B357c42042cF608159A2B81c1',
     Darkweed: '0x68EA4640C5ce6cC0c9A1F17B7b882cB1cBEACcd7',
